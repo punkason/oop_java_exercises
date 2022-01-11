@@ -1,33 +1,13 @@
 package com.techreturners.cats;
 
-public class LionCat implements Cat {
-    @Override
-    public void goToSleep() {
-
-    }
-
-    @Override
-    public boolean isAsleep() {
-        return false;
-    }
-
-    @Override
-    public void wakeUp() {
-
-    }
-
-    @Override
-    public String getSetting() {
-        return null;
-    }
+public class LionCat extends DomesticCat {
 
     @Override
     public int getAverageHeight() {
-        return 0;
+        return 1100;
     }
-
     @Override
     public String eat() {
-        return null;
+        return "Roar!!!!";
     }
 }

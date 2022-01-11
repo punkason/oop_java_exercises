@@ -1,33 +1,39 @@
 package com.techreturners.cats;
 
 public class DomesticCat implements Cat {
+    protected boolean sleep;
+
+    public DomesticCat(){
+        sleep = false;
+    }
+
     @Override
     public void goToSleep() {
-
+        sleep = true;
     }
 
     @Override
     public boolean isAsleep() {
-        return false;
+        return sleep;
     }
 
     @Override
     public void wakeUp() {
-
+        sleep = false;
     }
 
     @Override
     public String getSetting() {
-        return null;
+        return "domestic";
     }
 
     @Override
     public int getAverageHeight() {
-        return 0;
+        return 23;
     }
 
     @Override
     public String eat() {
-        return null;
+        return "Purrrrrrr";
     }
 }
