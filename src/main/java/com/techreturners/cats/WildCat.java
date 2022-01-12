@@ -1,9 +1,9 @@
 package com.techreturners.cats;
 
-public class DomesticCat implements Cat {
+public abstract class WildCat implements Cat{
     protected boolean sleep;
 
-    public DomesticCat(){
+    public WildCat(){
         sleep = false;
     }
 
@@ -24,21 +24,17 @@ public class DomesticCat implements Cat {
 
     @Override
     public String getSetting() {
-        return "domestic";
+        return "wild";
     }
 
     @Override
-    public int getAverageHeight() {
-        return 23;
-    }
+    public abstract int getAverageHeight();
 
     @Override
-    public String eat() {
-        return "Purrrrrrr";
-    }
+    public abstract String eat();
 
     @Override
     public String run() {
-        return "Too lazy to run";
+        return "Running";
     }
 }

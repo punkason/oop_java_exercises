@@ -1,6 +1,6 @@
 package com.techreturners.cats;
 
-public class LionCat extends DomesticCat {
+public class LionCat extends WildCat {
 
     @Override
     public int getAverageHeight() {

@@ -2,7 +2,6 @@ package com.techreturners.cats;
 
 interface Cat {
 
-
     void goToSleep();
 
     boolean isAsleep();
@@ -14,4 +13,6 @@ interface Cat {
     int getAverageHeight();
 
     String eat();
+
+    String run();
 }
