@@ -1,13 +1,8 @@
 package com.techreturners.cats;
 
-public class CheetahCat extends WildCat {
-    @Override
-    public int getAverageHeight() {
-        return 100;
-    }
+public class CheetahCat extends AbstractCat {
 
-    @Override
-    public String eat() {
-        return "Zzzzzzz";
+    public CheetahCat(){
+        super("wild",100,"Zzzzzzz","Running");
     }
 }
